@@ -1,0 +1,5 @@
+<h2>Create New Task</h2>
+  <%= form_with url: "/tasks/create", locak: true do |f| %>
+  <p><%= f.text_area :title %></p>
+  <p><%= f.submit "Create" %></p>
+<% end %>

@@ -1,0 +1,6 @@
+<h2>To Do APP</h2>
+<%= link_to "Create New Task", "/tasks/new" %>
+<h2>【Task List】</h2>
+<% @tasks.each do |task| %>
+  <p>・<%= task.title %><%= button_to "削除", task_path(task.id), method: :delete, data: { confirm: "本当に削除しますか？" } %></p>
+<% end %>

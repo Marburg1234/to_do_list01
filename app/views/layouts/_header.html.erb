@@ -1,0 +1,11 @@
+<header>
+  <div class="d-flex justify-content-end">
+    <%= link_to tasks_path, method: :post, class: 'text-right' do %>
+      <i class="fa-solid fa-list-check"></i>Task一覧へ
+    <% end %>
+
+    <%= link_to new_task_path, class: 'text-light' do %>
+      <i class="fa-regular fa-square-plus"></i>Taskを追加する
+    <% end %>
+  </div>
+</header>
