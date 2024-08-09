@@ -1,5 +1,7 @@
-<h2>Create New Task</h2>
-  <%= form_with url: "/tasks/create", locak: true do |f| %>
-  <p><%= f.text_area :title %></p>
-  <p><%= f.submit "Create" %></p>
-<% end %>
+<div class="container">
+  <h2>Create New Task</h2>
+    <%= form_with url: "/tasks/create", locak: true do |f| %>
+    <p class="form"><%= f.text_area :title %></p>
+    <p class="btn"><%= f.submit "保存する" %></p>
+  <% end %>
+</div>

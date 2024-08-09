@@ -9,6 +9,7 @@
         <th></th>
         <th>Task</th>
         <th></th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
@@ -16,7 +17,8 @@
         <tr>
           <td></td>
           <td><%= task.title %></td>
-          <td><%= button_to "削除", task_path(task.id), method: :delete, data: { confirm: "本当に削除しますか？" } %></td>
+          <td class="btn"><%= button_to "編集", edit_task_path(task.id) %></td>
+          <td class="btn"><%= button_to "削除", task_path(task.id), method: :delete, data: { confirm: "本当に削除しますか？" } %></td>
         </tr>
       <% end %>
     </tbody>
